@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080" role="img" aria-labelledby="contour-title contour-desc">
+  <title id="contour-title">CONTOUR — Proposed Name for Seer Risk Pricing (risk.seer.pm)</title>
+  <desc id="contour-desc">Square brand mark and typographic poster proposing the name CONTOUR for risk.seer.pm, showing market-estimated probability of default contours across DeFi assets on matched horizons.</desc>
+  <defs>
+    <linearGradient id="efBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#101013"/>
+      <stop offset="55%" stop-color="#14131C"/>
+      <stop offset="100%" stop-color="#0C0C0F"/>
+    </linearGradient>
+    <linearGradient id="efViolet" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#9B6BFF"/>
+      <stop offset="50%" stop-color="#7D33FF"/>
+      <stop offset="100%" stop-color="#581CE8"/>
+    </linearGradient>
+    <linearGradient id="contourStroke1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2DD4BF" stop-opacity="0.2"/>
+      <stop offset="50%" stop-color="#2DD4BF" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#2DD4BF" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="contourStroke2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7D33FF" stop-opacity="0.25"/>
+      <stop offset="50%" stop-color="#9B6BFF" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#7D33FF" stop-opacity="0.25"/>
+    </linearGradient>
+    <linearGradient id="contourStroke3" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.25"/>
+      <stop offset="50%" stop-color="#FBBF24" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#F43F5E" stop-opacity="0.35"/>
+    </linearGradient>
+    <radialGradient id="violetGlow" cx="50%" cy="42%" r="45%">
+      <stop offset="0%" stop-color="#7D33FF" stop-opacity="0.32"/>
+      <stop offset="65%" stop-color="#7D33FF" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#101013" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="efGrid" width="54" height="54" patternUnits="userSpaceOnUse">
+      <path d="M 54 0 L 0 0 0 54" fill="none" stroke="#1F1F26" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Canvas -->
+  <rect width="1080" height="1080" fill="url(#efBg)"/>
+  <rect width="1080" height="1080" fill="url(#efGrid)" opacity="0.65"/>
+  <circle cx="540" cy="450" r="460" fill="url(#violetGlow)"/>
+
+  <!-- Outer Frame -->
+  <rect x="54" y="54" width="972" height="972" rx="28" fill="none" stroke="#262630" stroke-width="2"/>
+
+  <!-- Top Bar Metadata -->
+  <g transform="translate(96, 108)">
+    <!-- Seer Hex-Prism Mark -->
+    <polygon points="22,0 44,12 44,36 22,48 0,36 0,12" fill="url(#efViolet)"/>
+    <path d="M 11,18 L 22,12 L 33,18 L 22,24 Z M 11,30 L 22,24 L 33,30 L 22,36 Z" fill="#EDEDF2"/>
+    <text x="60" y="33" fill="#EDEDF2" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="28" font-weight="700" letter-spacing="-0.5">seer</text>
+    <text x="130" y="33" fill="#67676F" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="20">/</text>
+    <text x="152" y="33" fill="#A8A8B3" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="18" letter-spacing="1.5">CONTOUR.SEER.PM</text>
+
+    <rect x="664" y="4" width="224" height="40" rx="20" fill="#1A1A1E" stroke="#32323D" stroke-width="1.5"/>
+    <circle cx="688" cy="24" r="5" fill="#7D33FF"/>
+    <text x="704" y="29" fill="#EDEDF2" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" font-weight="600" letter-spacing="1">RISK PRICING</text>
+  </g>
+
+  <!-- Central Graphic: Topographic / Probability Contour Field -->
+  <g transform="translate(96, 200)">
+    <rect x="0" y="0" width="888" height="390" rx="20" fill="#15151A" stroke="#272732" stroke-width="1.5"/>
+
+    <!-- Vertical Protocol Comparison Guides -->
+    <line x1="148" y1="36" x2="148" y2="344" stroke="#23232E" stroke-width="1.5" stroke-dasharray="4 6"/>
+    <line x1="344" y1="36" x2="344" y2="344" stroke="#23232E" stroke-width="1.5" stroke-dasharray="4 6"/>
+    <line x1="544" y1="36" x2="544" y2="344" stroke="#23232E" stroke-width="1.5" stroke-dasharray="4 6"/>
+    <line x1="740" y1="36" x2="740" y2="344" stroke="#23232E" stroke-width="1.5" stroke-dasharray="4 6"/>
+
+    <!-- Horizon / Reference Labels -->
+    <text x="28" y="42" fill="#67676F" font-family="ui-monospace, SFMono-Regular, monospace" font-size="13" letter-spacing="1">IMPLIED ANNUALIZED PD CONTOURS (ILLUSTRATIVE)</text>
+    <text x="860" y="42" text-anchor="end" fill="#A8A8B3" font-family="ui-monospace, SFMono-Regular, monospace" font-size="13">HORIZON: Q4 2026</text>
+
+    <!-- Upper Contour: Tail-Stress Tier (6.4% PD) -->
+    <path d="M 36,155 C 148,145 230,92 344,96 C 458,100 470,162 544,148 C 630,132 670,78 740,82 C 795,85 830,110 852,118"
+          fill="none" stroke="url(#contourStroke3)" stroke-width="3.5" stroke-linecap="round"/>
+
+    <!-- Middle Contour: Core Market Spread Tier (2.4% PD) -->
+    <path d="M 36,232 C 148,224 235,178 344,182 C 455,186 468,238 544,224 C 632,208 665,164 740,168 C 795,171 830,192 852,198"
+          fill="none" stroke="url(#contourStroke2)" stroke-width="5" stroke-linecap="round"/>
+
+    <!-- Lower Contour: Baseline Reference Tier (0.8% PD) -->
+    <path d="M 36,304 C 148,298 240,272 344,274 C 452,276 472,306 544,296 C 630,284 668,262 740,264 C 795,266 830,278 852,282"
+          fill="none" stroke="url(#contourStroke1)" stroke-width="3.5" stroke-linecap="round"/>
+
+    <!-- Data Nodes on the Contours -->
+    <!-- Node A -->
+    <circle cx="148" cy="298" r="7" fill="#101013" stroke="#2DD4BF" stroke-width="3.5"/>
+    <rect x="92" y="314" width="112" height="26" rx="6" fill="#101013" stroke="#262630"/>
+    <text x="148" y="331" text-anchor="middle" fill="#2DD4BF" font-family="ui-monospace, monospace" font-size="12" font-weight="700">ASSET A · 0.8%</text>
+
+    <!-- Node B -->
+    <circle cx="344" cy="182" r="8" fill="#101013" stroke="#9B6BFF" stroke-width="4"/>
+    <rect x="286" y="138" width="116" height="28" rx="6" fill="#241447" stroke="#7D33FF"/>
+    <text x="344" y="156" text-anchor="middle" fill="#EDEDF2" font-family="ui-monospace, monospace" font-size="12" font-weight="700">ASSET B · 2.4%</text>
+
+    <!-- Node C -->
+    <circle cx="544" cy="224" r="8" fill="#101013" stroke="#9B6BFF" stroke-width="4"/>
+    <rect x="486" y="240" width="116" height="28" rx="6" fill="#1F1F24" stroke="#7D33FF"/>
+    <text x="544" y="258" text-anchor="middle" fill="#EDEDF2" font-family="ui-monospace, monospace" font-size="12" font-weight="700">ASSET C · 1.9%</text>
+
+    <!-- Node D -->
+    <circle cx="740" cy="82" r="7" fill="#101013" stroke="#FBBF24" stroke-width="3.5"/>
+    <rect x="680" y="38" width="120" height="28" rx="6" fill="#291D12" stroke="#F59E0B"/>
+    <text x="740" y="56" text-anchor="middle" fill="#FDE68A" font-family="ui-monospace, monospace" font-size="12" font-weight="700">ASSET D · 6.4%</text>
+  </g>
+
+  <!-- Main Proposed Name Lockup -->
+  <g transform="translate(96, 676)">
+    <text x="0" y="0" fill="#7D33FF" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="18" font-weight="700" letter-spacing="3">
+      PROPOSED PRODUCT NAME · SEER RISK PRICING
+    </text>
+    <text x="-4" y="108" fill="#EDEDF2" font-family="system-ui, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="124" font-weight="800" letter-spacing="-3">
+      Contour
+    </text>
+    <text x="2" y="160" fill="#A8A8B3" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="25" font-weight="500">
+      See how the market maps relative risk across DeFi protocols.
+    </text>
+  </g>
+
+  <!-- Footer Bar -->
+  <g transform="translate(96, 932)">
+    <line x1="0" y1="0" x2="888" y2="0" stroke="#262630" stroke-width="1.5"/>
+    <text x="0" y="36" fill="#67676F" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15">
+      MARKET PROBABILITY ESTIMATES · NOT AN AUDIT OR INSURANCE GUARANTEE
+    </text>
+    <text x="888" y="36" text-anchor="end" fill="#A8A8B3" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15" font-weight="600">
+      @530cpp · Mainnet #39
+    </text>
+  </g>
+</svg>
