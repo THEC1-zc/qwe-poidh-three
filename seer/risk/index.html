@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>06 Risk Pricing (Contour) — Protocol Risk Comparison (Mainnet #38)</title>
+  <link rel="stylesheet" href="../assets/seer-ef.css" />
+</head>
+<body>
+  <div class="sim-banner" role="status">
+    <span><strong>DEMO / SIMULATED DATA ONLY:</strong> Illustrative market fixtures. No live markets, no wallet connection, and no funds at stake.</span>
+    <span>Electric Foundation (EF) Interface Suite · X: @530cpp</span>
+  </div>
+  <header class="ef-header">
+    <div class="ef-header-inner">
+      <a class="ef-logo" href="../home/index.html">
+        <svg width="24" height="24" viewBox="0 0 44 48" aria-hidden="true">
+          <polygon points="22,0 44,12 44,36 22,48 0,36 0,12" fill="#7D33FF"/>
+          <path d="M 11,18 L 22,12 L 33,18 L 22,24 Z M 11,30 L 22,24 L 33,30 L 22,36 Z" fill="#EDEDF2"/>
+        </svg>
+        <span>seer</span>
+        <span class="ef-logo-sub">EF SUITE</span>
+      </a>
+      <nav class="ef-nav" aria-label="Seer six interfaces navigation">
+        <a href="../index.html" class="">Ecosystem Hub</a><a href="../home/index.html" class="">01 Homepage</a><a href="../app/index.html" class="">02 Seer App</a><a href="../deep/index.html" class="">03 Deep</a><a href="../futarchy/index.html" class="">04 Futarchy</a><a href="../opportunity/index.html" class="">05 Opportunity</a><a href="../risk/index.html" class="active">06 Risk (Contour)</a>
+      </nav>
+      <div class="ef-actions">
+        <button type="button" class="ef-btn" id="efThemeToggle">☀ Light Mode</button>
+      </div>
+    </div>
+  </header>
+  <main class="ef-main">
+
+    <section class="ef-hero">
+      <div class="ef-eyebrow">06 · Risk Pricing · Proposed Name: CONTOUR (contour.seer.pm)</div>
+      <h1 class="ef-title">Compare Market-Estimated DeFi Protocol Risk Across Matched Quarters</h1>
+      <p class="ef-subtitle">
+        Instead of reading a single binary market in isolation, compare market-implied Probability of Default (PD) estimates across DeFi assets side by side. Shared capital can price multiple protocols at once. All figures below are illustrative market estimates—never a security audit or insured safety guarantee.
+      </p>
+    </section>
+
+    <div class="ef-toolbar" role="region" aria-label="Risk Pricing filters">
+      <div style="display:flex;gap:8px;flex-wrap:wrap;">
+        <select id="riskQuarter" class="ef-select" aria-label="Select quarterly horizon">
+          <option value="Q4">Horizon: Q4 2026 (Matched Quarter)</option>
+          <option value="Q3">Horizon: Q3 2026 (Prior Quarter)</option>
+        </select>
+        <select id="riskCategory" class="ef-select" aria-label="Filter protocol sector">
+          <option value="ALL">All DeFi Sectors</option>
+          <option value="Lending">Lending</option>
+          <option value="Stablecoin">Stablecoin</option>
+          <option value="Staking">Staking</option>
+          <option value="Restaking">Restaking</option>
+          <option value="Yield">Yield</option>
+          <option value="Bridge">Bridge</option>
+        </select>
+      </div>
+      <select id="riskSort" class="ef-select" aria-label="Sort protocols">
+        <option value="pd_desc">Sort: Highest Implied PD First</option>
+        <option value="pd_asc">Sort: Lowest Implied PD First</option>
+        <option value="shift">Sort: Largest Quarterly Shift (Q3→Q4)</option>
+      </select>
+    </div>
+
+    <div class="ef-table-wrap">
+      <table class="ef-table">
+        <thead>
+          <tr>
+            <th>Protocol Asset (Simulated)</th>
+            <th>Sector</th>
+            <th>Implied Yearly PD Estimate</th>
+            <th>Q3→Q4 Shift</th>
+            <th>Relative Risk Contour Band</th>
+            <th>Shared Pool Depth</th>
+          </tr>
+        </thead>
+        <tbody id="riskTableBody"></tbody>
+      </table>
+    </div>
+
+  </main>
+  <footer class="ef-footer">
+    <div class="ef-footer-inner">
+      <span>Seer Protocol Six-Interface Redesign Concept · Simulated Prototype (No Live Markets or Execution)</span>
+      <span><a href="../../index.html">← All Three Bounty Entries</a> · <a href="../index.html">EF Brand Rationale &amp; Hub</a></span>
+    </div>
+  </footer>
+  <script src="../assets/seer-ef.js"></script>
+</body>
+</html>

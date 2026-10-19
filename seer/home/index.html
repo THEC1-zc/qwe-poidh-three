@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>01 Seer Homepage — Protocol & Ecosystem (Mainnet #38)</title>
+  <link rel="stylesheet" href="../assets/seer-ef.css" />
+</head>
+<body>
+  <div class="sim-banner" role="status">
+    <span><strong>DEMO / SIMULATED DATA ONLY:</strong> Illustrative market fixtures. No live markets, no wallet connection, and no funds at stake.</span>
+    <span>Electric Foundation (EF) Interface Suite · X: @530cpp</span>
+  </div>
+  <header class="ef-header">
+    <div class="ef-header-inner">
+      <a class="ef-logo" href="../home/index.html">
+        <svg width="24" height="24" viewBox="0 0 44 48" aria-hidden="true">
+          <polygon points="22,0 44,12 44,36 22,48 0,36 0,12" fill="#7D33FF"/>
+          <path d="M 11,18 L 22,12 L 33,18 L 22,24 Z M 11,30 L 22,24 L 33,30 L 22,36 Z" fill="#EDEDF2"/>
+        </svg>
+        <span>seer</span>
+        <span class="ef-logo-sub">EF SUITE</span>
+      </a>
+      <nav class="ef-nav" aria-label="Seer six interfaces navigation">
+        <a href="../index.html" class="">Ecosystem Hub</a><a href="../home/index.html" class="active">01 Homepage</a><a href="../app/index.html" class="">02 Seer App</a><a href="../deep/index.html" class="">03 Deep</a><a href="../futarchy/index.html" class="">04 Futarchy</a><a href="../opportunity/index.html" class="">05 Opportunity</a><a href="../risk/index.html" class="">06 Risk (Contour)</a>
+      </nav>
+      <div class="ef-actions">
+        <button type="button" class="ef-btn" id="efThemeToggle">☀ Light Mode</button>
+      </div>
+    </div>
+  </header>
+  <main class="ef-main">
+
+    <section class="ef-hero">
+      <div class="ef-eyebrow">01 · Seer Protocol Homepage</div>
+      <h1 class="ef-title">One Prediction Protocol Beneath Five Specialist Applications</h1>
+      <p class="ef-subtitle">
+        Seer turns collective conviction into structured, comparable price signals. The explorer brings market types together; specialist views reveal the comparisons each decision needs.
+      </p>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:16px;">
+        <a class="ef-btn ef-btn-primary" href="../app/index.html">Launch Seer App Explorer →</a>
+        <a class="ef-btn" href="../index.html#rationale">Read EF Brand Rationale</a>
+      </div>
+    </section>
+
+    <section class="ef-card" style="margin-bottom:20px;">
+      <div class="ef-eyebrow">Interactive Protocol Stack</div>
+      <h2 style="margin:4px 0 10px;font-size:1.18rem;">One Protocol, Different Decisions</h2>
+      <div class="ef-pills" id="homeLayerButtons" style="margin-bottom:14px;">
+        <button type="button" class="ef-pill active">1. One Shared Protocol</button>
+        <button type="button" class="ef-pill">2. Five Specialized Views</button>
+        <button type="button" class="ef-pill">3. Human Decision Makers</button>
+      </div>
+      <div id="homeLayerDetail" style="background:var(--ef-nested);border:1px solid var(--ef-border);border-radius:12px;padding:16px;"></div>
+    </section>
+
+    <section class="ef-grid-3" aria-label="Ecosystem Applications Overview">
+      <article class="ef-card">
+        <div class="ef-eyebrow">02 · General Discovery</div>
+        <h3 style="margin:4px 0 6px;">Seer App (Market Explorer)</h3>
+        <p style="font-size:0.86rem;color:var(--ef-muted);margin:0 0 12px;">The Etherscan of Seer: browse, filter, and inspect every market type, wrapped ERC-20 outcome token, and oracle state in one place.</p>
+        <a href="../app/index.html" class="mono" style="font-size:0.82rem;">Explore Markets →</a>
+      </article>
+      <article class="ef-card">
+        <div class="ef-eyebrow">03 · Multi-Outcome &amp; Agents</div>
+        <h3 style="margin:4px 0 6px;">Deep</h3>
+        <p style="font-size:0.86rem;color:var(--ef-muted);margin:0 0 12px;">Many-outcome forecasting where AI agents and humans price expected evaluator scores across large grant cohorts.</p>
+        <a href="../deep/index.html" class="mono" style="font-size:0.82rem;">Open Deep Field →</a>
+      </article>
+      <article class="ef-card">
+        <div class="ef-eyebrow">04 · Conditional Governance</div>
+        <h3 style="margin:4px 0 6px;">Futarchy</h3>
+        <p style="font-size:0.86rem;color:var(--ef-muted);margin:0 0 12px;">Side-by-side PASS vs. FAIL conditional forecasts on a shared success metric to inform—never replace—DAO voting.</p>
+        <a href="../futarchy/index.html" class="mono" style="font-size:0.82rem;">Compare Conditional Branches →</a>
+      </article>
+      <article class="ef-card">
+        <div class="ef-eyebrow">05 · Submission Signals</div>
+        <h3 style="margin:4px 0 6px;">Opportunity Markets</h3>
+        <p style="font-size:0.86rem;color:var(--ef-muted);margin:0 0 12px;">Traders price which contest submissions are likely to win, helping human reviewers spot strong, under-reviewed entries.</p>
+        <a href="../opportunity/index.html" class="mono" style="font-size:0.82rem;">View Submission Cohort →</a>
+      </article>
+      <article class="ef-card">
+        <div class="ef-eyebrow">06 · DeFi Risk Topography</div>
+        <h3 style="margin:4px 0 6px;">Risk Pricing (Contour)</h3>
+        <p style="font-size:0.86rem;color:var(--ef-muted);margin:0 0 12px;">Compare market-implied Probability of Default (PD) estimates across DeFi protocols on matched quarterly horizons.</p>
+        <a href="../risk/index.html" class="mono" style="font-size:0.82rem;">Compare Protocol Risk →</a>
+      </article>
+    </section>
+
+  </main>
+  <footer class="ef-footer">
+    <div class="ef-footer-inner">
+      <span>Seer Protocol Six-Interface Redesign Concept · Simulated Prototype (No Live Markets or Execution)</span>
+      <span><a href="../../index.html">← All Three Bounty Entries</a> · <a href="../index.html">EF Brand Rationale &amp; Hub</a></span>
+    </div>
+  </footer>
+  <script src="../assets/seer-ef.js"></script>
+</body>
+</html>

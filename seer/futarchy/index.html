@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>04 Futarchy — Conditional Pass vs. Fail Comparison (Mainnet #38)</title>
+  <link rel="stylesheet" href="../assets/seer-ef.css" />
+</head>
+<body>
+  <div class="sim-banner" role="status">
+    <span><strong>DEMO / SIMULATED DATA ONLY:</strong> Illustrative market fixtures. No live markets, no wallet connection, and no funds at stake.</span>
+    <span>Electric Foundation (EF) Interface Suite · X: @530cpp</span>
+  </div>
+  <header class="ef-header">
+    <div class="ef-header-inner">
+      <a class="ef-logo" href="../home/index.html">
+        <svg width="24" height="24" viewBox="0 0 44 48" aria-hidden="true">
+          <polygon points="22,0 44,12 44,36 22,48 0,36 0,12" fill="#7D33FF"/>
+          <path d="M 11,18 L 22,12 L 33,18 L 22,24 Z M 11,30 L 22,24 L 33,30 L 22,36 Z" fill="#EDEDF2"/>
+        </svg>
+        <span>seer</span>
+        <span class="ef-logo-sub">EF SUITE</span>
+      </a>
+      <nav class="ef-nav" aria-label="Seer six interfaces navigation">
+        <a href="../index.html" class="">Ecosystem Hub</a><a href="../home/index.html" class="">01 Homepage</a><a href="../app/index.html" class="">02 Seer App</a><a href="../deep/index.html" class="">03 Deep</a><a href="../futarchy/index.html" class="active">04 Futarchy</a><a href="../opportunity/index.html" class="">05 Opportunity</a><a href="../risk/index.html" class="">06 Risk (Contour)</a>
+      </nav>
+      <div class="ef-actions">
+        <button type="button" class="ef-btn" id="efThemeToggle">☀ Light Mode</button>
+      </div>
+    </div>
+  </header>
+  <main class="ef-main">
+
+    <section class="ef-hero">
+      <div class="ef-eyebrow">04 · Futarchy · Conditional Governance Markets</div>
+      <h1 class="ef-title">Compare Outcome Forecasts: If Proposal Passes vs. If Proposal Fails</h1>
+      <p class="ef-subtitle">
+        Futarchy uses paired conditional markets to estimate how a chosen success metric will perform if a governance proposal passes versus if it does not. The market provides an informational signal; the DAO retains the decision.
+      </p>
+    </section>
+
+    <div class="ef-toolbar" role="region" aria-label="Futarchy proposal controls">
+      <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;flex:1;">
+        <label for="futarchySelect" style="font-size:0.84rem;font-weight:600;">Proposal:</label>
+        <select id="futarchySelect" class="ef-select" style="flex:1;min-width:220px;">
+          <option value="GIP-114">GIP-114: Allocate 3.5M USDC to Cross-Chain Outcome AMM Incentives</option>
+          <option value="SEP-29">SEP-29: Reduce Base Resolver Bond Escalation Multiplier (2.0x → 1.5x)</option>
+          <option value="KIP-88">KIP-88: Enable Shared Collateral Vaults for Risk Pricing Cohorts</option>
+        </select>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
+        <label for="futarchyShock" style="font-size:0.82rem;color:var(--ef-muted);">Simulate PASS Branch Stress:</label>
+        <input type="range" id="futarchyShock" min="-3.0" max="3.0" step="0.2" value="0.0" />
+        <span id="futarchyShockVal" class="mono" style="font-size:0.82rem;color:var(--ef-violet-soft);">+0.0</span>
+      </div>
+    </div>
+
+    <div id="futarchyComparisonView" aria-live="polite"></div>
+
+  </main>
+  <footer class="ef-footer">
+    <div class="ef-footer-inner">
+      <span>Seer Protocol Six-Interface Redesign Concept · Simulated Prototype (No Live Markets or Execution)</span>
+      <span><a href="../../index.html">← All Three Bounty Entries</a> · <a href="../index.html">EF Brand Rationale &amp; Hub</a></span>
+    </div>
+  </footer>
+  <script src="../assets/seer-ef.js"></script>
+</body>
+</html>
